@@ -1,0 +1,32 @@
+package com.alura.servlet.model;
+
+public class Empresa {
+
+	private Long id = 0l;
+	private String nome;
+
+	public Empresa(String nome) {
+		this.nome = nome;
+	}
+
+	public Long getId() {
+		return id;
+	}
+
+	public String getNome() {
+		return nome;
+	}
+
+	public void setId(long id) {
+		this.id = id;
+		
+	}
+
+	@Override
+	public String toString() {
+		return "Empresa{" +
+				"id=" + id +
+				", nome='" + nome + '\'' +
+				'}';
+	}
+}
